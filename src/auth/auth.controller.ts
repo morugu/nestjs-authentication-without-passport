@@ -7,10 +7,10 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { LoginDto } from './dto/LoginDto';
-import { SignupDto } from './dto/SignupDto';
-import { JwtGuard } from './guards/JwtGuard';
-import { SignupPipe } from './pipes/SignupPipe';
+import { LoginDto } from './dto/login.dto';
+import { SignupDto } from './dto/signup.dto';
+import { JwtGuard } from './guards/jwt.guard';
+import { SignupPipe } from './pipes/signup.pipe';
 
 @Controller('auth')
 export class AuthController {
